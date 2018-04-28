@@ -1,0 +1,52 @@
+
+<section class="css-spinner">
+  <div class="loader">
+
+    <!-- square spin -->
+    <div *ngIf="loaderStyle=='square-spin'"
+          class="square-spin">
+      <div></div>
+    </div>
+
+    <!-- line-scale -->
+    <div *ngIf="loaderStyle=='line-scale'"
+      class="line-scale">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- line-spin -->
+    <div *ngIf="loaderStyle=='line-spin'"
+      class="line-spin-fade-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- packman -->
+    <div *ngIf="loaderStyle=='packman'"
+      class="pacman">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- Ball spin fade loader -->
+    <div *ngIf="loaderStyle=='ball-spin-fade-loader'"
+      class="ball-spin-fade-loader" >
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+      <div></div><div></div>
+    </div>
+  </div>
+</section>

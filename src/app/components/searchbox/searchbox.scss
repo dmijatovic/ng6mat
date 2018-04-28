@@ -1,0 +1,44 @@
+
+@import '../../../styles/variables';
+
+:host {
+  flex:1;
+  display: flex;
+  width: 100%;
+  /*padding:14px 0px;
+  border-bottom: 1px solid material-color("grey", "300");
+  */
+  min-width: 300px;
+  /*
+  input {
+    flex: 1;
+    border: none;
+    padding: 0px 16px;
+
+  }
+  input:focus {
+    outline: none;
+    color: mat-color($mat-grey, 900);
+  }
+  input::placeholder {
+    color: $border-color;
+  }*/
+}
+
+
+/*
+.table-search-box{
+  flex:1;
+  padding: 16px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+
+  input{
+    padding: 0px 16px;
+    flex:1;
+    min-width: 300px;
+  }
+}*/
+

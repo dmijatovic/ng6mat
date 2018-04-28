@@ -1,0 +1,15 @@
+
+
+//MATERIAL CORRECTION
+//IMPORTED IN MAIN SCSS
+
+.app-search-box{
+  .mat-form-field{
+    flex: 1;
+    border: none;
+
+    .mat-form-field-underline{
+      height:0px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+
+<section class="flex-row error-page">
+
+  <div class="error-message-block"></div>
+
+  <div class="flex-col error-message-panel">
+    <div class="error-header">
+      <i class="material-icons">
+        {{matIco}}
+      </i>
+      <h1>
+          {{errMsg.title}}
+      </h1>
+    </div>
+
+    <div class="error-body"
+      [innerHTML]="errMsg.body">
+      <!-- innerHTML injected here -->
+    </div>
+
+    <div class="error-nav">
+      <button mat-raised-button
+        (click)="goBack()"
+        color="primary">
+          Go back
+      </button>
+    </div>
+
+  </div>
+
+</section>

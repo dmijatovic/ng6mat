@@ -1,0 +1,40 @@
+<!-- HEADER -->
+<div mat-dialog-title
+  class="mp-dialog-title">
+  <i class="material-icons">
+    {{ mdIcon }}
+  </i>
+</div>
+
+<!-- CONTENT -->
+<mat-dialog-content>
+  <div class="mp-dialog-content-wrapper"
+    [innerHTML]="bodyHtml">
+    <!-- CONTENT WILL BE INJECTED HERE AS HTML -->
+  </div>
+</mat-dialog-content>
+
+<!-- ACTIONS -->
+<mat-dialog-actions class="mp-dialog-actions">
+  <!-- BUTTONS -->
+  <div class="mp-dialog-buttons">
+    <button mat-raised-button
+      *ngFor="let btn of buttons; let i=index"
+      class="mat-raised-button {{btn?.class}}"
+      (click)="answer(i)"
+      (keyup.enter)="answer(i)">
+      {{ btn.label }}
+    </button>
+  </div>
+  <!-- PREFERENCE -->
+  <div *ngIf="preference.show"
+    class="mp-dialog-preference">
+    <mat-checkbox
+      name="preference"
+      [(ngModel)]="preference.value"
+      [color]="'primary'"
+      (change)="setPreference()">
+      {{preference.label}}
+    </mat-checkbox>
+  </div>
+</mat-dialog-actions>

@@ -1,0 +1,101 @@
+
+@import '../../../styles/variables';
+
+.mp-preference-modal{
+
+  display: block;
+  min-width: 480px;
+
+  .mp-dialog-title{
+    display: flex;
+    //padding: 14px 0px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $primary-font-color;
+    .material-icons{
+      font-size: 91px;
+      cursor: default;
+      //font-weight: 500;
+    }
+  }
+
+  .mp-dialog-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    //padding: 14px 0px
+
+    .center-text{
+      text-align: center;
+    }
+
+    .size-xs{
+      //padding: 7px 0px;
+      font-size: 10px;
+    }
+
+    .size-sm{
+      padding: 7px 0px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .size-md{
+      padding: 7px 0px;
+      font-size: 21px;
+    }
+
+    .size-xl{
+      padding: 7px 0px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .size-xxl{
+      padding: 14px;
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    ol{
+      padding-left: 60px;
+    }
+
+    li{
+      line-height: 28px;
+    }
+
+    .padding-left-xxl{
+      padding:0px 14px 0px 35px;
+    }
+  }
+
+  .mp-dialog-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: space-around;
+
+    .mp-dialog-buttons{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 14px 0px;
+    }
+
+    .mp-dialog-preference{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 14px 0px;
+      //font-size: 12px;
+    }
+  }
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing{
+  opacity: 1;
+}

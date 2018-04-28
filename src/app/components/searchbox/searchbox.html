@@ -1,0 +1,29 @@
+
+<!--SEARCH BOX -->
+
+<!-- SEARCH button -->
+<button mat-button mat-icon-button
+  (click)="emitSearch()">
+  <mat-icon>search</mat-icon>
+</button>
+
+<!-- INPUT -->
+<mat-form-field floatPlaceholder="never">
+  <input matInput
+    [(ngModel)]="inputSearch"
+    (keyup)="term$.next($event)"
+    (focus)="cssSearch='focus'"
+    (focusout)="cssSearch=null"
+    [placeholder]="searchPlaceholder" />
+
+  <button *ngIf="inputSearch"
+    mat-button mat-icon-button
+    matSuffix
+    (click)="resetSearch()">
+    <mat-icon>close</mat-icon>
+  </button>
+
+</mat-form-field>
+<!-- CANCEL button -->
+
+

@@ -6,7 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "dev": "ng serve --extract-css",
-    "build": "ng build",
+    "build:dev": "ng build",
+    "build:prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

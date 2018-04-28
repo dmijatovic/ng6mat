@@ -1,0 +1,64 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgModel } from '@angular/forms';
+//material modules
+import {
+  MatToolbarModule, MatIconModule, MatButtonModule,
+  MatTooltipModule, MatMenuModule, MatDividerModule,
+  MatFormFieldModule, MatDialogModule, MatCheckboxModule
+} from '@angular/material';
+
+import { ProPreferenceModalService } from './preference.modal.service';
+import { ProPreferenceModal } from './preference.modal';
+
+describe('PreferenceComponent', () => {
+  let component: ProPreferenceModal;
+  let fixture: ComponentFixture<ProPreferenceModal>;
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      imports:[
+        NgModel, MatDialogModule, MatCheckboxModule
+      ],
+      declarations: [ ProPreferenceModal ],
+      providers:[ ProPreferenceModalService ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(ProPreferenceModal);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+
+/*
+describe('ProPreferenceModalService',()=>{
+  let service:ProPreferenceModalService;
+  beforeEach(() => { 
+    service = new ProPreferenceModalService(); 
+  });
+
+  it('should emit hide loader',()=>{
+    service.showLoader$.subscribe((d)=>{
+      expect(d).toBe(false);
+    });
+    service.setShowLoader(false);
+  });
+
+  it('should emit loader configuration',()=>{
+    service.loaderDef$.subscribe((d:any)=>{
+      expect(d.loaderId).toBe('test-component');
+      expect(d.loaderSolid).toBe(false);
+    });
+    service.setLoaderDef({
+      loaderId:'test-component',
+      loaderStyle:'square-spin',
+      loaderType:'page',
+      loaderSolid:false 
+    });
+  });
+});*/

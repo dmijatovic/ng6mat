@@ -1,0 +1,36 @@
+
+// import material theming for styles refrence
+@import '../../../styles/variables';
+
+.error-page{
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message-panel{
+  min-width:40vw;
+  max-width:70vw;
+}
+
+.error-header{
+  display: flex;
+  align-items: center;
+  color: $warn-color;
+
+  i{
+    font-size:48px;
+    padding-right: 24px;
+  }
+}
+
+.error-body{
+  padding: 16px 8px;
+  font-size: 1.1em;
+}
+
+.error-nav{
+  display:flex;
+  justify-content: flex-end;
+  padding: 8px;
+}

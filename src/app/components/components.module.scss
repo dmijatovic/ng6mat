@@ -1,0 +1,13 @@
+/*
+  GLOBAL STYLES APPLIED FOR SHARED COMPONENTS
+  here we import all scss that shold be applied
+  using globall scss file.
+  In turn this files imported by main.scss
+*/
+
+//loader styles
+@import './loader/loader.component';
+
+//preference modal styles are global in order
+//to overwrite default material styles
+@import './modal/preference.modal';
