@@ -1,0 +1,51 @@
+
+/**
+  BASIC PAGE LAYOUT
+*/
+
+//Basic layout
+body{
+  font-family: 'Roboto', sans-serif;
+  padding:0;
+  margin:0;
+}
+
+.app-root{
+  display:flex;
+  flex-direction:column;
+  // min-height:100vh;
+  //this is fix for IE11 to flex
+  //https://connect.microsoft.com/IE/feedback/details/816293/ie11-flexbox-with-min-height-not-vertically-aligning-with-align-items-center
+  min-height: 100vh;
+  // height: inherit;
+  //width:100vw;
+}
+
+.app-page{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  min-width: 325px;
+
+  .app-body{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    /*NOTE:
+      position: relative is required
+      by (component) loader type
+      which uses position: absolute
+      to fill complete space of the body
+    */
+    position:relative;
+    padding: 24px;
+    //this is for IE11 because it does not follow flex:1
+    min-height: 480px;
+    height: inherit;
+  }
+}
+
+/* You can add global styles to this file, and also import other style files */
+.pdv16 {
+	padding: 16px 0px;
+}

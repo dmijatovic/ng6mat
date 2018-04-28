@@ -1,0 +1,45 @@
+
+/**
+ANGULAR MATERIAL THEME and THEMING file
+Note! theming file is moved to local folder
+to avoid unintented overwrite by upgrade of angular/material
+
+When upgrading to new version of material change the reference of
+theming file to point to original angular location in node_module
+For more information see https://material.angular.io/guides
+
+//original angular material theming location
+@import '~@angular/material/theming';
+*/
+
+@import '~@angular/material/theming';
+@import './variables';
+
+// Define custom typography config that overrides the font-family as well as the
+// `headlines` and `body-1` levels.
+$custom-typography: mat-typography-config(
+  $font-family: $primary-font,
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+// Override the typography in the core CSS.
+//with new custom typography
+@include mat-core($custom-typography);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$app-color-primary: mat-palette($primary, 700, 100, 900);
+$app-color-accent: mat-palette($accent, 200, 100, 700);
+// The warn palette is optional (defaults to red).
+$app-color-warn: mat-palette($warn);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$app-theme: mat-light-theme($app-color-primary, $app-color-accent, $app-color-warn);
+//$app-theme: mat-dark-theme($app-color-primary, $app-color-accent, $app-color-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($app-theme);

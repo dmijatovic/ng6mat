@@ -1,0 +1,43 @@
+
+@import './theming';
+
+$primary: $mat-blue;
+$accent: $mat-blue-grey;
+$warn: $mat-red;
+
+$primary-font:"Roboto, Open Sans, sans-serif";
+
+$primary-color: mat-color($primary, 700);
+$primary-color-contrast: mat-contrast($primary, 700);
+
+$accent-color: mat-color($accent, 500);
+$accent-color-contrast: mat-contrast($accent, 500);
+
+$warn-color: mat-color($warn, 500);
+$warn-color-contrast: mat-contrast($warn, 500);
+
+$border-color: mat-color($mat-grey, 300);
+
+$primary-font-color: mat-color($mat-grey, 900);
+$primary-font-contrast: mat-contrast($mat-grey, 900);
+
+$padding-v-sm:8px 0px;
+$padding-h-sm:0px 8px;
+$padding-vh-sm:8px;
+$padding-v-md:16px 0px;
+$padding-h-md:0px 16px;
+$padding-vh-md:16px;
+$padding-v-lg:24px 0px;
+$padding-h-lg:0px 24px;
+$padding-vh-lg:24px;
+$padding-v-xl:32px 0px;
+$padding-h-xl:0px 32px;
+$padding-vh-xl:32px;
+
+
+
+
+
+
+
+

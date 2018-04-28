@@ -1,0 +1,58 @@
+
+/**
+  This is the place for globale material
+  overrides/corrections
+
+  Before adding items in this file
+  check the possibility to correct
+  the styles in _theme.scss
+*/
+
+.mat-form-field{
+  line-height: 1.42;
+}
+
+// All fixes and preferences for angular material (detailtables)
+
+.mat-list-item.active-side-menu {
+
+  .mat-list-item-content {
+      color: mat-color($app-color-primary, 800);
+      background-color: mat-color($mat-grey, 200);
+     // background-color: green;
+  }
+
+}
+
+.mat-list-item {
+  .mat-list-item-content:focus,
+  .mat-list-item-content:hover, {
+      background-color: mat-color($mat-grey, 300);
+  }
+}
+
+// Add row hover for material tables
+mat-table {
+  mat-row:hover {
+      background-color: mat-color($mat-grey, 200);
+  }
+
+  &.editable mat-row:hover {
+      cursor: pointer;
+  }
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.table-toolbar {
+  background-color: mat-color($mat-blue, 800);
+  color: mat-contrast($mat-blue, 800);
+}
+
+.mat-dialog-container{
+  .mat-dialog-actions{
+    justify-content: flex-end
+  }
+}

@@ -1,0 +1,26 @@
+
+/**
+  ROBOTO FONT FACE
+
+  installed via NPM
+  https://www.npmjs.com/package/roboto-fontface
+
+*/
+
+@import "font-mixins";
+
+
+//LIGHT - 300
+@include roboto-font('Roboto', 'Light', 300, normal);
+
+//REGULAR - 400
+@include roboto-font('Roboto', 'Regular', 400, normal);
+
+
+//MEDIUM - 500
+@include roboto-font('Roboto', 'Medium', 500, normal);
+
+//BOLD - 700
+@include roboto-font('Roboto', 'Bold', 700, normal);
+
+
