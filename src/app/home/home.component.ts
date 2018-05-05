@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { AppLoaderService } from '../loader/loader.service';
 import {
   AppPreferenceModalService, examplePreferenceModalCfg
- } from '../modal/preference.modal.service';
+} from '../modal/preference.modal.service';
+
 
 @Component({
   selector: 'app-home',

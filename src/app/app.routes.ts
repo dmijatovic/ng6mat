@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 //--------------------
 // app module components required for routes
+import { AppComponentsModule } from './component/components.module';
 import { AppLayoutModule } from './layout/layout.module';
 import { AppLayoutPage } from './layout/page/app-layout-page';
 import { HomeComponent } from './home/home.component';
@@ -41,6 +42,7 @@ let routes:Routes = [{
 @NgModule({
   imports:[
     AppLayoutModule,
+    AppComponentsModule,
     //router as lastone (always)
     RouterModule.forRoot(routes)
   ],

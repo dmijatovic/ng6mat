@@ -5,9 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 //material modules
 import {
-  MatToolbarModule, MatIconModule, MatButtonModule,
-  MatTooltipModule, MatMenuModule, MatDividerModule,
-  MatFormFieldModule, MatDialogModule, MatCheckboxModule
+  MatFormFieldModule, MatInputModule,
+  MatIconModule, MatButtonModule
 } from '@angular/material';
 
 //----------------------------
@@ -23,9 +22,8 @@ import { SearchBoxOnly } from './searchbox/searchbox';
 @NgModule({
   imports: [
     CommonModule, FormsModule,
-    MatToolbarModule, MatIconModule, MatButtonModule,
-    MatTooltipModule, MatMenuModule, MatDividerModule,
-    MatFormFieldModule, MatDialogModule, MatCheckboxModule
+    MatFormFieldModule, MatInputModule,
+    MatIconModule, MatButtonModule
   ],
   declarations: [
     SearchBoxOnly,
