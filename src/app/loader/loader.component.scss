@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+/**
+  LOADER STYLES
+  NOTE! loader shape styles are imported in main.scss
+  and applied globally because loader is used
+  in other components
+  v.0.1 Jan 2018, Dusan Mijatovic
+*/
+
+:host{
+
+  display:flex;
+  z-index:9;
+
+  .css-spinner{
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+:host.page-loader{
+  position:fixed;
+  left:0;right:0;
+  top:0;bottom:0;
+}
+
+:host.component-loader{
+  position:absolute;
+  left:0;right:0;
+  top:0;bottom:0;
+}
+
+:host.solid{
+  background-color: $primary-color-contrast;
+}
+
+:host.transparent{
+  background-color: transparent;
+}
+

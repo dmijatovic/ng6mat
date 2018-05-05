@@ -1,21 +1,21 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoaderComponent } from './loader.component';
+import { AppLoaderComponent } from './loader.component';
 import { AppLoaderService } from './loader.service';
 
-describe('LoaderComponent', () => {
-  let component: LoaderComponent;
-  let fixture: ComponentFixture<LoaderComponent>;
+describe('AppLoaderComponent', () => {
+  let component: AppLoaderComponent;
+  let fixture: ComponentFixture<AppLoaderComponent>;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoaderComponent ],
+      declarations: [ AppLoaderComponent ],
       providers:[ AppLoaderService ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LoaderComponent);
+    fixture = TestBed.createComponent(AppLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -26,10 +26,10 @@ describe('LoaderComponent', () => {
 });
 
 
-describe('LoaderService',()=>{
+describe('AppLoaderService',()=>{
   let service:AppLoaderService;
-  beforeAll(() => { 
-    service = new AppLoaderService(); 
+  beforeAll(() => {
+    service = new AppLoaderService();
   });
 
   it('should emit hide loader',()=>{
@@ -48,7 +48,7 @@ describe('LoaderService',()=>{
       loaderId:'test-component',
       loaderStyle:'square-spin',
       loaderType:'page',
-      loaderSolid:false 
+      loaderSolid:false
     });
   });
 });

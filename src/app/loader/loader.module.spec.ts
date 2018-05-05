@@ -1,10 +1,10 @@
-import { LoaderModule } from './loader.module';
+import { AppLoaderModule } from './loader.module';
 
-describe('LoaderModule', () => {
-  let loaderModule: LoaderModule;
+describe('AppLoaderModule', () => {
+  let loaderModule: AppLoaderModule;
 
   beforeEach(() => {
-    loaderModule = new LoaderModule();
+    loaderModule = new AppLoaderModule();
   });
 
   it('should create an instance', () => {

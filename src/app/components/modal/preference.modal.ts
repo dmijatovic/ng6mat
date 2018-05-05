@@ -11,12 +11,12 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MatCheckbox, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
-  selector: 'pro-preference-modal',
+  selector: 'app-preference-modal',
   templateUrl: './preference.modal.html',
   //styles need to global to overwrite material defaults
-  //styleUrls:['./customer.segment.modal.scss'],
+  styleUrls:['./preference.modal.scss'],
   host: {
-    "class": "mp-preference-modal"
+    "class": "app-preference-modal"
   }
 })
 export class AppPreferenceModal implements OnInit {

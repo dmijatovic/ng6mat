@@ -95,8 +95,8 @@ export const examplePreferenceModalCfg={
   //note! not part of the service
   //it should be implemented on page itself using setTimeout
   delay: 2000,
-  //automatically close modal after 10 sec.
-  closeAfterMs: 15000
+  //automatically close modal after 15 sec.
+  //closeAfterMs: 15000
 }
 
 

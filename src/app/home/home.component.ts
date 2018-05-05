@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
   }
 
   demoLoaderAndModal(){
+    //debugger
     //demo loader first
     setTimeout(()=>{
       this.showLoader(false);
