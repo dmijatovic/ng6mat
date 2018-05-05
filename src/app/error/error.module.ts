@@ -13,7 +13,6 @@ const routes = [{
   path: '',
   redirectTo: '500',
   pathMatch: 'full'
-  //component: ErrorComponent
 }, {
   path: ':eid',
   component: ErrorPageComponent

@@ -14,7 +14,7 @@ import { MatDialogRef, MatCheckbox, MAT_DIALOG_DATA } from '@angular/material';
   selector: 'app-preference-modal',
   templateUrl: './preference.modal.html',
   //styles need to global to overwrite material defaults
-  styleUrls:['./preference.modal.scss'],
+  //styleUrls:['./preference.modal.scss'],
   host: {
     "class": "app-preference-modal"
   }

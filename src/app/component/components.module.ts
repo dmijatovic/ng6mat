@@ -17,8 +17,8 @@ import { SearchBoxOnly } from './searchbox/searchbox';
 //loader component and service
 //import { LoaderComponent } from './loader/loader.component';
 //modal with preference saved in localStorage
-import { AppPreferenceModal } from './modal/preference.modal';
-import { AppPreferenceModalService } from './modal/preference.modal.service';
+//import { AppPreferenceModal } from './modal/preference.modal';
+//import { AppPreferenceModalService } from './modal/preference.modal.service';
 
 @NgModule({
   imports: [
@@ -28,20 +28,20 @@ import { AppPreferenceModalService } from './modal/preference.modal.service';
     MatFormFieldModule, MatDialogModule, MatCheckboxModule
   ],
   declarations: [
-    SearchBoxOnly, 
+    SearchBoxOnly,
     //LoaderComponent,
-    AppPreferenceModal
+    //AppPreferenceModal
   ],
   exports:[
-    SearchBoxOnly, 
+    SearchBoxOnly,
     //LoaderComponent,
-    AppPreferenceModal
+    //AppPreferenceModal
   ],
   providers:[
-    AppPreferenceModalService
+    //AppPreferenceModalService
   ],
   entryComponents:[
-    AppPreferenceModal
+    //AppPreferenceModal
   ]
 })
 export class AppComponentsModule { }

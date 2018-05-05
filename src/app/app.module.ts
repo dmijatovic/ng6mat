@@ -8,30 +8,34 @@ import { AppRouterModule } from './app.routes';
 
 //loader module
 import { AppLoaderModule } from './loader/loader.module';
-import { AppComponentsModule } from './components/components.module'; 
-
+//modals
+import { AppModalModule } from './modal/modal.module';
+//shared components
+import { AppComponentsModule } from './component/components.module';
 //root component
 import { AppRoot } from './app.root';
 
 //-------------------
 //app services
 import { AppLoaderService } from './loader/loader.service';
-import { AppPreferenceModalService } from './components/modal/preference.modal.service';
+//import { AppPreferenceModalService } from './components/modal/preference.modal.service';
+import { AppPreferenceModalService } from './modal/preference.modal.service';
 
 @NgModule({
   declarations: [
     AppRoot
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     BrowserAnimationsModule,
     AppComponentsModule,
     AppLoaderModule,
+    AppModalModule,
     RouterModule,
     AppRouterModule
   ],
-  providers: [ 
-    AppLoaderService, AppPreferenceModalService 
+  providers: [
+    AppLoaderService, AppPreferenceModalService
   ],
   bootstrap: [ AppRoot ]
 })
