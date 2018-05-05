@@ -30,6 +30,8 @@ Starter project has only two environments and build configurations. These should
 
 - dev: development environment and build. Environement variables are definited in environment.dev.ts file and build switches in angular.json. Dev build has only extract css and sourcemaps set on true.
 
+- production: production environment and build.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
