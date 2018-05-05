@@ -64,15 +64,9 @@
                   "with": "src/environments/environment.dev.ts"
                 }
               ],
-              "optimization": true,
-              "outputHashing": "all",
               "sourceMap": true,
               "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": true,
-              "buildOptimizer": true
+              "aot": false
             }
           }
         },
