@@ -17,8 +17,8 @@ import { Component, Input,
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
-  /* read notes at the top!*/
-  // styleUrls: ['./loader.component.scss'],
+  /*read notes at the top!*/
+  //styleUrls: ['./loader.component.scss'],
   host:{
     class:'app-loader'
   }

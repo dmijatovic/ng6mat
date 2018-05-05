@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 
 //app services
 import { AppLoaderService } from '../loader/loader.service';
-import { 
+import {
   AppPreferenceModalService, examplePreferenceModalCfg
  } from '../components/modal/preference.modal.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  host:{
+    "class":"app-body"
+  }
 })
 export class HomeComponent implements OnInit {
   constructor(
@@ -18,16 +21,16 @@ export class HomeComponent implements OnInit {
   ){}
 
   ngOnInit() {
-    
+
     this.demoLoaderAndModal();
-    
+
   }
 
   demoLoaderAndModal(){
     //demo loader first
     setTimeout(()=>{
       this.showLoader(false);
-    },1000);
+    },3000);
     //demo preference modal
     setTimeout(()=>{
       this.showPreferenceModal();
