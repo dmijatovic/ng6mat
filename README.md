@@ -1,26 +1,27 @@
 # Ng6mat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0-rc.7.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-The goal of this project is to test angular material and angular cli of new version. I want to create an easy starter project for angular with material setup to use scss and custom theme. In addition I would need to test new angular cli commands that seem to be changed a lot. My major concern are sourcemaps for scss. Sourcemaps did not worked properly in last version of cli (v1.7.x).
+The goal is to setup angular material and angular cli for an easy starter project with angular material and use scss and custom theme. In addition, I want to test new angular cli commands.
 
 ## Branches
 
-- mat-starter: basic starter with material using scss styles. All assets are local and included in styles folder.  
+- mat-starter: basic starter with material using scss styles. All style assets (fonts and themes) are stored local in the styles folder.  
 - mat-
 
 
-## Development server
+## Scripts
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Folowing scripts are defined in package.json
+- `npm start`: runs default angular cli development setup (not used)
+- `npm run dev`: runs app in dev mode using dev environement and dev build definitions (see angular.json)
+- `npm run prod`: runs app in dev mode using dev environement and dev build definitions (see angular.json)
+- `npm run build`: creates production build using production env and  definitions (see angular.json)
+
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
