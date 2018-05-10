@@ -5,7 +5,10 @@ $primary: $mat-blue;
 $accent: $mat-blue-grey;
 $warn: $mat-red;
 
-$primary-font:"Roboto, Open Sans, sans-serif";
+//requires list when used directly in font-family
+$primary-font-list:'Roboto','Open Sans','sans-serif';
+//string value used in material theme mixins!
+$primary-font-str:'Roboto,Open Sans,sans-serif';
 
 $primary-color: mat-color($primary, 700);
 $primary-color-contrast: mat-contrast($primary, 700);
