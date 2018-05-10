@@ -7,6 +7,7 @@ The goal is to setup angular material and angular cli for an easy starter projec
 ## Branches
 
 - mat-starter: basic starter with material using scss styles. All style assets (fonts and themes) are stored local in the styles folder.
+- mat-bs-starter: bootstrap, grid ONLY, added (sass). Only root component, material scss setup and bootstrap grid.
 - mat-app-home: extended version containing standard pages usally used in any app
   - home: home page. Landing page, just a basic scafold
   - error: error pages. This is separate module (by default lazy loaded)
@@ -14,6 +15,9 @@ The goal is to setup angular material and angular cli for an easy starter projec
   - layout: basic layout scafold having: header, body and footer component. This is separate module. The layout is just created but not implemented in this version
   - loader: default loaders. This is separate module
   - modal: default modal/popup. This is separate module
+- dev: development branch for testing new features
+- libtest: development branch te test new library command of angular-cli
+- master: not used really, except for up to date readme file :-)
 
 ## Scripts
 
