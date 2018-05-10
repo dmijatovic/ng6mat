@@ -1,0 +1,45 @@
+/*
+  bootstrap file structure
+  https://getbootstrap.com/docs/4.0/getting-started/theming/#file-structure
+
+  custom grid overwrite
+  https://getbootstrap.com/docs/4.0/layout/grid/#customizing-the-grid
+*/
+
+//import variables and mixins
+//new version seem to have separate grid file
+//@import '~bootstrap/scss/bootstrap-grid';
+//the content is copied here
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+//overwriting default grid variables
+$grid-columns: 12;
+$grid-gutter-width: 24px;
+
+//breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1600px
+);
+
+//container
+$container-max-widths: (
+  sm: 720px,
+  md: 960px,
+  lg: 1140px,
+  xl: 1480px
+);
+
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/grid-framework";
+@import "~bootstrap/scss/mixins/grid";
+
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/flex";
+

@@ -8,7 +8,7 @@ The goal is to setup an easy starter project with angular material using scss an
 
 - mat-starter: root component and basic material scss styles. This branch has only root component. All style assets (fonts and themes) are stored in styles folder.
 - mat-bs-starter: bootstrap, grid ONLY, added (sass). Only root component, material scss setup and bootstrap grid.
-- mat-app-home: including router and basic modules: home, error, help and modal.
+- mat-app-home: including router and basic modules: home, error, help and modal. It also includes bootstrap grid (scss)
 - dev: development branch for testing new features
 - libtest: development branch te test new library command of angular-cli
 
