@@ -2,22 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-The goal is to setup angular material and angular cli for an easy starter project with angular material and use scss and custom theme. In addition, I want to test new angular cli commands.
+The goal is to setup an easy starter project with angular material using scss and custom material theme. In addition, I want to test new angular cli commands.
 
 ## Branches
 
-- mat-starter: basic starter with material using scss styles. All style assets (fonts and themes) are stored local in the styles folder.  
-- mat-
-
+- mat-starter: root component and basic material scss styles. This branch has only root component. All style assets (fonts and themes) are stored in styles folder.
+- mat-bs-starter: bootstrap, grid ONLY, added (sass). Only root component, material scss setup and bootstrap grid.
+- mat-app-home: including router and basic modules: home, error, help and modal.
+- dev: development branch for testing new features
+- libtest: development branch te test new library command of angular-cli
 
 ## Scripts
 
 Folowing scripts are defined in package.json
+
 - `npm start`: runs default angular cli development setup (not used)
 - `npm run dev`: runs app in dev mode using dev environement and dev build definitions (see angular.json)
 - `npm run prod`: runs app in dev mode using dev environement and dev build definitions (see angular.json)
 - `npm run build`: creates production build using production env and  definitions (see angular.json)
-
 
 ## Code scaffolding
 
